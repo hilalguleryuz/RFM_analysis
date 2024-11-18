@@ -144,9 +144,9 @@ GROUP BY 1
 ORDER BY 1;
 ```
 #### SQL OUTPUT
-![alt text]()
-![alt text]()
-![alt text]()
+![alt text](https://github.com/hilalguleryuz/RFM_analysis/blob/main/rfm_screenchots/rfm_2.png)
+![alt text](https://github.com/hilalguleryuz/RFM_analysis/blob/main/rfm_screenchots/rfm_3.png)
+![alt text](https://github.com/hilalguleryuz/RFM_analysis/blob/main/rfm_screenchots/rfm_4.png)
 
 As can be understood from the table and graph above, the number of people who shopped only once is 1494, which makes up 34% of the total number. Therefore, I gave a frequency_score of 1 to those who shopped once. Again, since the number of people who shopped twice was quite high, I gave them a score of 2. Since the percentage of people who ordered 3 and 4 times was close to the percentage of people who ordered twice, I gave them a score of 3. As a result, as can be understood from the excel table above, I grouped the shopping frequencies so that their percentages were close to each other and gave each of them a score between 1-5 accordingly. I did this grouping with CASE WHEN in the query below.
 
